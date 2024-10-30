@@ -1,9 +1,7 @@
 import { InfinitySpin } from "react-loader-spinner";
 import s from "./Loader.module.css";
-import React from "react";
-import { LoaderProps } from "../types";
 
-const Loader: React.FC<LoaderProps> = () => (
+const Loader = () => (
   <div className={s.loader}>
     <InfinitySpin
       visible={true}

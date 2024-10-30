@@ -32,8 +32,6 @@ export interface LoadMoreBtnProps {
   changeClick: () => void;
 }
 
-export interface LoaderProps {}
-
 export interface SearchBarProps {
   onSubmit: (query: string) => void;
 }
