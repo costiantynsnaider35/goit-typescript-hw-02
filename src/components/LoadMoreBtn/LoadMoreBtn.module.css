@@ -1,0 +1,18 @@
+.LoadMoreBtn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.MoreBtn {
+  background-color: darkblue;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.LoadMoreBtn :hover {
+  background-color: lightblue;
+}
