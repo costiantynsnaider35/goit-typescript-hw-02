@@ -25,7 +25,7 @@ export interface ImageGalleryProps {
 export interface ImageModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
-  image?: Image;
+  image?: Image | null;
 }
 
 export interface LoadMoreBtnProps {
