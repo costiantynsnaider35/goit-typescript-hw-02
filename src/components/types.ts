@@ -35,3 +35,9 @@ export interface LoadMoreBtnProps {
 export interface SearchBarProps {
   onSubmit: (query: string) => void;
 }
+export interface LoaderProps {
+  visible?: boolean;
+  width?: string;
+  color?: string;
+  ariaLabel?: string;
+}

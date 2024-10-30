@@ -1,13 +1,19 @@
 import { InfinitySpin } from "react-loader-spinner";
 import s from "./Loader.module.css";
+import { LoaderProps } from "../types";
 
-const Loader = () => (
+const Loader: React.FC<LoaderProps> = ({
+  visible = true,
+  width = "200",
+  color = "#4fa94d",
+  ariaLabel = "infinity-spin-loading",
+}) => (
   <div className={s.loader}>
     <InfinitySpin
-      visible={true}
-      width="200"
-      color="#4fa94d"
-      ariaLabel="infinity-spin-loading"
+      visible={visible}
+      width={width}
+      color={color}
+      ariaLabel={ariaLabel}
     />
   </div>
 );
