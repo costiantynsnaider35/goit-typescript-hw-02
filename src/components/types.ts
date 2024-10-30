@@ -7,7 +7,7 @@ export interface Image {
   alt_description: string;
 }
 
-export interface FetchImageResponse {
+export interface FetchImage {
   results: Image[];
   total: number;
 }
