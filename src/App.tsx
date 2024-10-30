@@ -59,6 +59,7 @@ function App() {
 
   const closeModal = (): void => {
     setOpenModal(false);
+    setSelectImage(null);
   };
 
   return (
