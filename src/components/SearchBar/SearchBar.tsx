@@ -1,12 +1,15 @@
 import toast, { Toaster } from "react-hot-toast";
 import { FaSearch } from "react-icons/fa";
 import s from "./SearchBar.module.css";
+import React from "react";
+import { SearchBarProps } from "../types";
 
-const SearchBar = ({ onSubmit }) => {
-  const handleSubmit = (e) => {
+const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.target;
-    const value = form.elements.searchQuery.value;
+    const form = e.target as HTMLFormElement;
+    const input = form.elements.namedItem("searchQuery") as HTMLFormElement;
+    const value = input.value;
     if (value.trim() === "") {
       form.reset();
       toast.error("Whoops, something went wrong!");
