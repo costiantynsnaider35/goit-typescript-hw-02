@@ -4,10 +4,11 @@ import { fetchImg } from "./components/api/API";
 import SearchBar from "./components/SearchBar/SearchBar";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
-import Loader from "./components/Loader/Loader";
+
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "./components/ImageModal/ImageModal";
 import { Image } from "./components/types";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   const [images, setImages] = useState<Image[]>([]);
